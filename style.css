@@ -1,0 +1,689 @@
+:root {
+    --main-color: #000080;
+    --bg: #1E90FF;
+    --border: .1rem solid rgba(255, 255, 255, 0.3);
+    color: #6495ED;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #000080;
+    border-radius: 5rem;
+}
+
+body {
+    background: #4682B4;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: #000080;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .9rem 3rem;
+    font-size: 1.7rem;
+    color: #fff;
+    border-radius: 6px;
+    background: var(--main-color);
+    cursor: pointer;
+    transition: 0.8s all;
+}
+
+.btn:hover {
+    letter-spacing: .1rem;
+    transition: 0.8s all;
+    background: var(--bg);
+}
+
+.header {
+    background: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 7%;
+    border-bottom: var(--border);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    height: 4rem;
+    border-radius: 30px;
+}
+
+.lexLogo {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 18rem;
+}
+
+.lexLogo::after {
+    content: 'LexWork';
+    opacity: 1;
+    animation: pisca 1.3s infinite;
+}
+
+@keyframes pisca {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.header .navbar a {
+    margin: 0 1rem;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: 0.8s all;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: .1rem solid var(--main-color);
+    padding-bottom: .5rem;
+    transition: 0.8s all;
+}
+
+.header .icons div {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    margin-left: 2rem;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+
+#menu-btn {
+    display: none;
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 7%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.8s all;
+}
+
+.header .search-form.active {
+    transform: scaleY(1);
+    transition: 0.8s all;
+}
+
+
+.header .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--black);
+    padding: 1rem;
+    text-transform: none;
+}
+
+.header .search-form label {
+    cursor: pointer;
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+    color: var(--black);
+}
+
+.header .search-form label:hover {
+    color: var(--main-color);
+}
+
+/* Menu do meu carrinho */
+.header .cardCarrinho-container {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    height: calc(100vh - 9.5rem);
+    width: 35rem;
+    background: rgb(0, 191, 255);
+    padding: 0 1.5rem;
+    transition: 0.9s;
+}
+
+.header .cardCarrinho-container.active {
+    right: 0;
+    transition: 0.9s all;
+}
+
+.header .cardCarrinho-container .cart-item {
+    position: relative;
+    margin: 2rem 0;
+    display: block;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 18px;
+    color: white;
+}
+
+.header .cardCarrinho-container .cart-item .fa-times {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--black);
+}
+
+.header .cardCarrinho-container .cart-item .fa-times:hover {
+    color: var(--main-color);
+}
+
+.header .cardCarrinho-container .cart-item img {
+    height: 7rem;
+}
+
+.header .cardCarrinho-container .cart-item .content h3 {
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .5rem;
+}
+
+.header .cardCarrinho-container .cart-item .content .price {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.header .cardCarrinho-container .btn {
+    width: 100%;
+    text-align: center;
+}
+
+.home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(./img/home-img.jpeg) no-repeat;
+    background-size: cover;
+    /*background-size: cover;*/
+    background-position: center;
+    background-attachment: fixed;
+    /*Posso remover para não deixa a img fixa*/
+}
+
+/* class"quote" Fazendo Efeito na img piscando */
+
+.quote {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50%;
+    width: 80px;
+
+}
+
+@keyframes quote {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.quote {
+    -webkit-animation: quote .90s linear infinite;
+    -moz-animation: quote .90s linear infinite;
+    -ms-animatiom: quote .90s linear infinite;
+    -o-animation: quote .90s linear infinite;
+    animation: quote .90s linear infinite;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 1.8;
+    padding: 2rem 0;
+    color: #eee;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+
+}
+
+.about .row .image img {
+    width: 100%;
+
+}
+
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+/* Text do ABOUT US */
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+    cursor: pointer;
+
+}
+
+.menu .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+    border-radius: 40px;
+}
+
+.menu .box-container .box h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-container .box .price span {
+    color: red;
+    background-color: #eee;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    border-radius: 10px;
+}
+
+/* mudando a cor da tabela do OUR MENU */
+.menu .box-container .box:hover {
+    background: transparent;
+    border-radius: 70px;
+}
+
+.menu .box-container .box:hover>* {
+    color: yellow;
+}
+
+.show {
+    right: 0;
+}
+
+.review .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review .box-container .box h3 {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review .box-container .box .stars i {
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.imgContato {
+    display: block;
+    width: 100%;
+    width: 520px;
+}
+
+.contact .row {
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.contact .row .map {
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+
+}
+
+.contact .row form h3 {
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: rgb(0, 0, 128);
+    border: var(--border);
+
+}
+
+.contact .row form .inputBox span {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+    text-transform: none;
+    background: none;
+}
+
+.blogs .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+}
+
+.blogs .box-container .box {
+    border: var(--border);
+}
+
+.blogs .box-container .box .image {
+    display: flex;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img {
+    height: 100%;
+    object-fit: cover;
+    width: 90%;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.blogs .box-container .box:hover .image img {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+}
+
+.blogs .box-container .box .content .title {
+    font-size: 2.3rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+    color: black;
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.footer {
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: 3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover {
+    color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover {
+    color: var(--main-color);
+}
+
+.footer .credit {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+
+@media (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    .header {
+        padding: 1.5rem 2rem;
+    }
+
+    section {
+        padding: 2rem;
+    }
+
+}
+
+
+@media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .navbar {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background: rgb(30, 144, 255);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+        color: black;
+    }
+
+    .header .navbar.active {
+        right: 0;
+    }
+
+    .header .navbar a {
+        color: var(--black);
+        display: block;
+        margin: 1.5rem;
+        padding: .5rem;
+        font-size: 2rem;
+    }
+
+    .header .search-form {
+        width: 90%;
+        right: 2rem;
+    }
+
+    .home {
+        background-position: left;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home .content h3 {
+        font-size: 4.5rem;
+
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+
+    }
+
+
+}
+
+@media (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+}

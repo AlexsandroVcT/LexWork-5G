@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png"> -->
+    <!-- <link rel="manifest" href="./favicon_io/site.webmanifest"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="/assets/css/card.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="//code.jivosite.com/widget/1IYhXlti7H" async></script>
+    <script defer src="script.js"></script>
+    <title>LexWork - Technology5G</title>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/Logo5G.png" alt="logo-5G">
+            <a class="lexLogo"></a>
+        </a>
+
+        <nav class="navbar nav__menu">
+            <a href="#" class="">home</a>
+            <a href="#about" class="">sobre</a>
+            <a href="#menu" class="">menu</a>
+            <a href="#products" class="nav__link">produtos</a>
+            <a href="#review" class="nav__link">cliente</a>
+            <a href="#contact" class="nav__link">contato</a>
+            <a href="#blogs" class="nav__link">blogs</a>
+        </nav>
+
+        <!--div icons-->
+        <div class="icons section">
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-bars" id="menu-btn"></div>
+
+        </div>
+
+        <!--fim da div icons-->
+
+        <!--div search-->
+        <div class="search-form section">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </div>
+        <!--fim da div search-->
+
+        <!--div cart-item-container "CARRINHO"-->
+        <div class="cardCarrinho-container" id="meuCarrinho">
+            <div class="cart-item">
+                <!--fim da div content-->
+            </div>
+            <!--fim div cart-item-->
+
+            <!-- <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img src="img/chipBlack.png" alt="5G-item">
+                <div class="content">
+                    <h3>Cart item 02</h3>
+                    <div class="price">$15.99/-</div>
+                    
+                </div>
+                
+            </div>
+            
+            
+            <div class="cart-item">
+                <span class="fas fa-times"></span>
+                <img class="esconder" src="img/chipBlue.png" alt="5G-item">
+                <div class="content">
+                    <h3>Cart item 03</h3>
+                    <div class="price">$15.99/-</div>
+                    
+                </div>
+               
+            </div>
+          
+            
+            <div class="cart-item">
+                <img src="img/chipGreen.png" alt="5G-item">
+                <div class="content">
+                    <h3>Cart item 04</h3>
+                    <span class="fas fa-times"></span>
+                    
+                    <div class="price">$15.99/-</div>
+                    
+                </div>
+                
+            </div> -->
+
+            <p>
+                <span class="total"></span>
+            </p>
+            <button onclick="alert('O processo de compras da loja esta em desenvolvimento')" class="btn"
+                id="btnCarrinho">Finalizar Compras</button>
+        </div>
+        <!--fim da div cart-item-container-->
+    </header>
+
+    <!--section one-->
+    <section class="home">
+        <div class="content lexwork">
+            <h3>lexwork</h3>
+            <img src="img/GIF.svg" alt="" class="home__img">
+            <a href="#" class="btn">INTERNET 5G</a>
+        </div>
+    </section>
+    <!--fim da section one-->
+
+    <!--section two-->
+    <section class="about" id="about">
+        <h1 class="heading sobre"><span>quem</span> somos </h1>
+        <!--div row-->
+        <div class="row">
+            <!--div image -->
+            <div class="image sobre">
+                <img src="img/about-imgg.png" class="about5G" alt="about-5G">
+            </div>
+            <!--fim da div image-->
+
+            <!--div content-->
+            <div class="content sobre">
+                <h3>Afinal, o que é e como funciona o 5G?</h3>
+                <p>Bill Gates já dizia: “Quem não está na internet não existe”. A mobilidade e rapidez da internet podem
+                    ajudar para que mais pessoas e negócios se digitalizem.
+                    Microempreendedores, empreendedores individuais ou donos de pequenos negócios podem criar a sua
+                    identidade digital. Seja um simples perfil na rede social para divulgar os trabalhos ou até mesmo
+                    lojas virtuais que podem ser criadas e gerenciadas pelos celulares.
+                    Além de inclusão social, isso pode fazer com que a economia se movimente mais.</p>
+                <p>Como você viu, as revoluções trazidas pelo 5G vão transformar muitas pessoas, hábitos e mercados. E
+                    então, você está pronto para ela?</p>
+                <a class="btn">Saiba Mais</a>
+            </div>
+            <!--fim da div content-->
+        </div>
+        <!--fim da div row-->
+    </section>
+    <!--fim da section two-->
+
+    <!--LOJA DE CHIPS NO HTML COM JAVASCRIPT-->
+    <section class="menu" id="menu">
+        <h1 class="heading">nosso <span>menu</span></h1>
+
+        <!--div box-container-->
+        <div class="box-container">
+
+            <!-- div box-->
+            <div class="box box1">
+                <img src="img/chipBlue.png" alt="menu" id="01imgCarrinho">
+                <h3>Chip - Blue</h3>
+                <div class="price">$25.99 <span>48.99</span></div>
+                <button data-product-id="0" class="btn btnComprar">Comprar</button>
+
+            </div>
+
+            <div class="box">
+                <img src="img/chipWhite.png" alt="menu">
+                <h3>Chip - White</h3>
+
+                <div class="price">$65.99 <span>82.99</span></div>
+                <button data-product-id="1" class="btn">Comprar</button>
+            </div>
+
+            <div class="box">
+                <img src="img/chipGreen.png" alt="menu">
+                <h3>Chip - Green</h3>
+                <div class="price">$99.99 <span>150.00</span></div>
+                <button data-product-id="2" class="btn">Comprar</button>
+            </div>
+
+            <div class="box">
+                <img src="img/chipRed.png" alt="menu">
+                <h3>Chip - Red</h3>
+                <div class="price">$48.99 <span>65.99</span></div>
+                <button data-product-id="3" class="btn">Comprar</button>
+            </div>
+
+            <div class="box">
+                <img src="img/chipBlack.png" alt="menu">
+                <h3>Chip - Black</h3>
+                <div class="price">$82.99 <span>150.00</span></div>
+                <button data-product-id="4" class="btn">Comprar</button>
+            </div>
+
+            <div class="box">
+                <img src="img/chip-x.png" alt="menu">
+                <h3>Chip - X-ray</h3>
+                <div class="price">$150.00 <span>200.00</span></div>
+                <button data-product-id="5" class="btn">Comprar</button>
+            </div>
+            <!--fim div box-container-->
+        </div>
+        <!--fim div box-container-->
+    </section>
+
+    <!--Card - planos -  Produtos-->
+    <div class="container" id="products">
+        <h1>Planos e preços</h1>
+        <p>Todos os planos começam com 7 dias de trilha gratuita, sem necessidade de cartão de crédito</p>
+
+        <div class="btn_wrap">
+            <h3>Planos Mensais</h3>
+            <label class="switch">
+                <input type="checkbox" id="switch-id">
+                <span class="slider round"></span>
+            </label>
+            <h3>Planos Anuais</h3>
+        </div>
+
+        <div class="content">
+            <div class="monthly">
+                <div class="pricing-table">
+                    <div class="ribbon">venda</div>
+                    <h3>Padrão</h3>
+                    <ul>
+                        <li>10 GB Disk Space</li>
+                        <li>15 Domain Emails</li>
+                        <li>4 Email Address</li>
+                        <li>
+                            <h2>Voz e dados 5G ilimitado no Brasil</h2>
+                        </li>
+                    </ul>
+                    <div class="price"><span>$25</span>/ Mensal</div>
+                    <a href="#Produtos">> compre agora</a>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="ribbon">venda</div>
+                    <h3>Prêmio</h3>
+                    <ul>
+                        <li>20 GB Disk Space</li>
+                        <li>25 Domain Emails</li>
+                        <li>8 Email Address</li>
+                        <li>
+                            <h2>Voz e dados 5G ilimitado no Brasil</h2>
+                        </li>
+                    </ul>
+                    <div class="price"><span>$65</span>/ Mensal</div>
+                    <a href="#Produtos">> compre agora</a>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="ribbon">venda</div>
+                    <h3>Diamante</h3>
+                    <ul>
+                        <li>30 GB Disk Space</li>
+                        <li>35 Domain Emails</li>
+                        <li>12 Email Address</li>
+                        <li>
+                            <h2>Voz e dados 5G ilimitado no Brasil</h2>
+                        </li>
+                    </ul>
+                    <div class="price"><span>$99</span>/ Mensal</div>
+                    <a href="#Produtos">> compre agora</a>
+                </div>
+            </div>
+
+            <div class="anually">
+                <div class="pricing-table">
+                    <div class="ribbon">venda</div>
+                    <h3>Standard</h3>
+                    <ul>
+                        <li>15 GB Disk Space</li>
+                        <li>20 Domain Emails</li>
+                        <li>8 Email Address</li>
+                        <li>
+                            <h2>Voz e dados 5G ilimitado no Brasil</h2>
+                        </li>
+                    </ul>
+                    <div class="price"><span>$48</span>/ Annual</div>
+                    <a href="#Produtos">> compre agora</a>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="ribbon">venda</div>
+                    <h3>Premium</h3>
+                    <ul>
+                        <li>30 GB Disk Space</li>
+                        <li>33 Domain Emails</li>
+                        <li>12 Email Address</li>
+                        <li>
+                            <h2>Voz e dados 5G ilimitado no Brasil</h2>
+                        </li>
+                    </ul>
+                    <div class="price"><span>$82</span>/ Annual</div>
+                    <a href="#Produtos">> compre agora</a>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="ribbon">venda</div>
+                    <h3>Diamond</h3>
+                    <ul>
+                        <li>40 GB Disk Space</li>
+                        <li>42 Domain Emails</li>
+                        <li>18 Email Address</li>
+                        <li>
+                            <h2>Voz e dados 5G ilimitado no Brasil</h2>
+                        </li>
+                    </ul>
+                    <div class="price"><span>$150</span>/ Annual</div>
+                    <a href="#Produtos">> compre agora</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!--section five-->
+    <section class="review" id="review">
+        <h1 class="heading"> análise <span>do cliente</span></h1>
+        <!--div box-container-->
+        <div class="box-container">
+            <!--div box-->
+            <div class="box">
+                <img src="img/quote-img.png" alt="review" class="quote">
+                <p>Como profissional e ser humano ávido que sou pelo avanço da tecnologia e por sua capacidade de mudar
+                    realidades,
+                    procuro acompanhar de perto as tendências de mercado e mudanças de comportamento dos consumidores e
+                    posso afirmar que,
+                    certamente, o 5G comandará a próxima onda de transformação digital em todos os setores da economia.
+                    Compreender a rede e os dispositivos relacionados para evitar problemas de serviço de forma proativa
+                    e oferecer uma solução rápida para aqueles que precisam de suporte.
+                </p>
+                <img src="img/pic-1.png" alt="user" class="user">
+                <h3>Alex</h3>
+                <!--div starts-->
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <!--fim div stars-->
+            </div>
+            <!--fim div box-->
+
+            <!--div box-->
+            <div class="box">
+                <img src="img/quote-img.png" alt="review" class="quote">
+                <p>Conforme o novo estudo intitulado “5G e o futuro da experiência do cliente”, realizado pela Adobe,
+                    a chave para o sucesso será a capacidade de aproveitar os dados para melhorar a experiência do
+                    cliente e aumentar
+                    o seu engajamento e a sua fidelidade. Em vez de os dados serem mantidos isolados como estão agora,
+                    muitas organizações terão que revisar
+                    sua infraestrutura de gerenciamento, adotando estruturas comuns e padrões abertos sempre que
+                    possível.
+                </p>
+                <img src="img/pic-2.png" alt="user" class="user">
+                <h3>Lidyan</h3>
+                <!--div starts-->
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <!--fim div stars-->
+            </div>
+            <!--fim div box-->
+
+            <!--div box-->
+            <div class="box">
+                <img src="img/quote-img.png" alt="review" id="piscar" class="quote">
+                <p>Neste cenário, dentre as muitas áreas a serem impactadas pela nova geração de Internet Móvel,
+                    uma que merece destaque, sem dúvida, é a do atendimento ao cliente. Isso porque a chegada do 5G
+                    poderá nos fazer caminhar rumo a um ambiente mais inteligente, ágil e integrado, ampliando o leque
+                    de ferramentas
+                    e tecnologias para ajudar as marcas a construírem jornadas de compra e suporte muito mais assertivas
+                    e personalizadas
+                    a seus consumidores.</p>
+                <img src="img/pic-3.png" alt="user" class="user">
+                <h3>Anthony</h3>
+                <!--div starts-->
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <!--fim div stars-->
+            </div>
+            <!--fim div box-->
+        </div>
+        <!--fim div box-container-->
+    </section>
+
+    <!--section six-->
+    <section class="contact" id="contact">
+        <h1 class="heading"><span>Fale</span> conosco </h1>
+        <!--div row-->
+        <div class="row">
+
+            <img class="imgContato" src="img/contato.svg">
+            <form id="form-contact">
+                <h3>entrar em contato</h3>
+                <!--div inputbox-->
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" id="name" placeholder="NOME" required>
+                </div>
+                <!--fim div inputbox-->
+
+                <!--div inputbox-->
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" id="email" placeholder="EMAIL" required>
+                </div>
+                <!--fim div inputbox-->
+
+                <!--div inputbox-->
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="tel" id="tel" placeholder="TELEFONE" required>
+                </div>
+                <!--fim div inputbox-->
+                <input onclick="submitContact()" type="submit" value="ENVIAR" class="btn">
+            </form>
+        </div>
+        <!--fim div row-->
+    </section>
+    <!--fim section six-->
+
+    <!--section blogs-->
+    <section class="blogs" id="blogs">
+        <h1 class="heading">nossos <span>blogs</span></h1>
+        <!--div box-container-->
+        <div class="box-container">
+            <!--div box-->
+            <div class="box">
+                <!--div image-->
+                <div class="image">
+                    <img src="img/robot-face-animate.svg" alt="blog">
+                </div>
+                <!--fim div image-->
+                <!--div content-->
+                <div class="content">
+                    <a href="#" class="title">Habilitando o 5G e o Futuro da Robótica</a>
+                    <span> LexWork</span>
+                    <p>A quinta geração de tecnologia sem fio abrirá o caminho para uma nova geração de robôs, alguns
+                        livres para fazer roaming controlado por links de comunicação sem fio em vez de com fio e
+                        explorando os vastos recursos de computação e armazenamento de dados da nuvem. Munidos desses
+                        recursos, os robôs podem ser controlados dinamicamente com precisão em tempo quase real e
+                        conectados a pessoas e máquinas local e globalmente.
+                    </p>
+                    <a class="btn">Leia Mais</a>
+                </div>
+                <!--fim div content-->
+            </div>
+            <!--fim div box-->
+
+            <!--div box-->
+            <div class="box">
+                <!--div image-->
+                <div class="image">
+                    <img src="img/cellphone-animate.svg" alt="blog">
+                </div>
+                <!--fim div image-->
+                <!--div content-->
+                <div class="content">
+                    <a href="#" class="title">Tecnologia SmartPhone</a>
+                    <span> LexWork</span>
+                    <p> Nova geração da internet móvel desembarca no país gerando muita curiosidade entre os
+                        brasileiros. Smartphone precisa ser compatível com 5G para acessar velocidades mais altas.
+                        O 5G é a evolução da atual rede de celulares de quarta geração. Trata-se de uma rede mais
+                        potente
+                        e veloz que, além de ser “inteligente”, causa menos impacto ao meio ambiente. A rede 5G será o
+                        próximo passo evolutivo dado pelas redes de comunicação móvel.
+                    </p>
+                    <a class="btn">Leia Mais</a>
+                </div>
+                <!--fim div content-->
+            </div>
+            <!--fim div box-->
+
+            <!--div box-->
+            <div class="box">
+                <!--div image-->
+                <div class="image">
+                    <img src="img/auction-animate.svg" alt="blog">
+                </div>
+                <!--fim div image-->
+                <!--div content-->
+                <div class="content">
+                    <a href="#" class="title">Leilão do 5G de US$ 1,2 trilhão</a>
+                    <span> LexWork</span>
+                    <p>O Poder Executivo prevê que o 5G vai gerar US$ 1,2 trilhão em investimentos nos próximos 20 anos.
+                        A nova tecnologia promete velocidades até 20 vezes superiores às atuais, além de tempo de
+                        resposta (latência) baixíssimo entre os dispositivos conectados. Isso vai permitir o
+                        desenvolvimento de novas aplicações, desde carros sem motorista até inovações na indústria,
+                        mineração e agricultura, entre outros setores.
+                    </p>
+                    <a class="btn">Leia Mais</a>
+                </div>
+                <!--fim div content-->
+            </div>
+            <!--fim div box-->
+        </div>
+        <!--fim div box-container-->
+    </section>
+
+    <!--section footer-->
+    <section class="footer">
+        <!--div share-->
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/dev_alex.vct/" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/alexsandro-vicente-b74b60234/" target="_blank"
+                class="fab fa-linkedin"></a>
+            <a href="https://github.com/AlexsandroVcT" target="_blank" class="fab fa-github"></a>
+        </div>
+        <!--fim div share-->
+
+        <!--div links-->
+        <div class="links">
+            <a href="#">home</a>
+            <a href="#about">sobre</a>
+            <a href="#menu">menu</a>
+            <a href="#products">produtos</a>
+            <a href="#review">cliente</a>
+            <a href="#contact">contato</a>
+            <a href="#blogs">blogs</a>
+        </div>
+        <!--fim div links-->
+
+        <div class="credit">WebSite em Desenvolvimento 2022 ©</div>
+
+    </section>
+    <script src="assets/js/card.js"></script>
+    <script src="assets/js/scriptContato.js"></script>
+    <script src="assets/js/scriptCarrinho.js"></script>
+    <!-- ==== SCROLL REVEAL ==== -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+</body>
+
+</html>
